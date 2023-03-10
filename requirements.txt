@@ -6,4 +6,5 @@ pydub==0.25.1
 pytz==2022.7.1
 ShazamAPI==0.0.2
 sounddevice==0.4.6
+gunicorn
 
