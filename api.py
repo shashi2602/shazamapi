@@ -4,8 +4,8 @@ import requests
 import uuid
 import time
 from json import dumps
-
-
+from random import choice
+from user_agent import USER_AGENTS
 from algorithm import SignatureGenerator
 from signature_format import DecodedMessage
 
@@ -18,7 +18,7 @@ HEADERS = {
     "Accept": "*/*",
     "Accept-Language": LANG,
     "Accept-Encoding": "gzip, deflate",
-    "User-Agent": "Shazam/3685 CFNetwork/1197 Darwin/20.0.0"
+    "User-Agent": choice(USER_AGENTS)
 }
 
 
