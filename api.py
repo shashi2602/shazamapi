@@ -38,7 +38,7 @@ class Shazam:
             
             results = self.sendRecognizeRequest(signature)
             if results['matches']:
-                return dumps(results, indent = 4, ensure_ascii = False)
+                return results
                 break
     
     def sendRecognizeRequest(self, sig: DecodedMessage) -> dict:
