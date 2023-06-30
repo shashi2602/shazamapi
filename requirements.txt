@@ -39,3 +39,4 @@ typing_extensions==4.7.0
 urllib3==1.26.14
 Werkzeug==2.2.3
 yarl==1.9.2
+numpy
